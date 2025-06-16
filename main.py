@@ -5,4 +5,4 @@ palpite = int(input("Adivinhe o número de 1 a 10: "))
 if palpite == numero:
     print("Acertou!")
 else:
-    print(f"Errou! O número era {numero}")
+    print(f"Errou! O numero era {numero}")
