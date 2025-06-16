@@ -1,7 +1,9 @@
 import random
 
-numero = random.randint(1, 10)
-tentativas = 3
+jogar_novamente? = "s"
+while jogar_novamente? == "s":
+    numero = random.randint(1, 10)
+    tentativas = 3
 
 print("Jogo da Advinhacao")
 print("Voce tem 3 tentativas para acertar o numero entre 1 e 10.")
@@ -20,4 +22,6 @@ while tentativas > 0:
             print("Errou! O numero e MENOR.")
 
         if tentativas == 0:
-            print(f"💀 Fim de jogo! O numero era {numero}")
+            print(f"Fim de jogo! O numero era {numero}")
+            
+jogar_novamente? = input("Deseja jogar novamente? (s/n):")
