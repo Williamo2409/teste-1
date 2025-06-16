@@ -24,4 +24,4 @@ while tentativas > 0:
         if tentativas == 0:
             print(f"Fim de jogo! O numero era {numero}")
             
-jogar_novamente = input("Deseja jogar novamente? (s/n):")
+jogar_novamente = input("Deseja jogar novamente? (s/n): ")
