@@ -5,8 +5,8 @@ while jogar_novamente == "s":
     numero = random.randint(1, 10)
     tentativas = 3
 
-print("Jogo da Advinhacao")
-print("Voce tem 3 tentativas para acertar o numero entre 1 e 10.")
+print("Jogo da Advinhacao", flush=True)
+print("Voce tem 3 tentativas para acertar o numero entre 1 e 10.", flush=True)
 
 while tentativas > 0:
     palpite = int(input(f"Tentativa {4 - tentativas}: "))
