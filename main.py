@@ -10,7 +10,7 @@ while tentativas > 0:
     palpite = int(input(f"Tentativa {4 - tentativas}: "))
     
     if palpite == numero:
-        print("🎉 Acertou! Parabens!")
+        print("Acertou! Parabens!")
         break
     else:
         tentativas -= 1
