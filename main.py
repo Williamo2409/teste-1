@@ -16,7 +16,7 @@ def input_com_timeout(prompt, timeout):
     t.start()
     t.join(timeout)
 
-    if tis_alive():
+    if t.is_alive():
         return None
     return resposta[0]
 
@@ -37,7 +37,7 @@ while True:
             print("⏰ Muito lentooo!")
             derrotas += 1
             break
-        entrada = input(f"Tentativa {4 - tentativas}: ")
+        entrada = input_com_timeout(f"Tentativa {4 - tentativas}: ", 10)
         if entrada is None:
             print("⏰ Muito lentooo!")
             derrotas += 1
